@@ -1,0 +1,96 @@
+.c2vTableWrap {
+    width: 100%;
+    // overflow-x: auto;
+}
+.widthAuto .c2vTable {
+    min-width: auto !important;
+}
+.c2vTable {
+    width: 100%;
+    font-size: 14px;
+    tr {
+        border-bottom: 2px solid #f1f1f2;
+        th,
+        td {
+            padding: 11px 0;
+            // vertical-align: middle;
+            min-width: 150px;
+        }
+
+        th {
+            text-align: left;
+            color: #19191b;
+            // vertical-align: middle;
+            position: relative;
+            font-size: 16px;
+            padding-left: 0;
+            padding-right: 15px;
+
+            :global .essential {
+                display: inline-block;
+                color: #475fff;
+                font-weight: 500;
+                margin-left: auto;
+                font-size: 15px;
+            }
+        }
+
+        &.noBorder {
+            border-bottom: 0;
+        }
+        &.plr-0 {
+            td {
+                padding-right: 0 !important;
+                padding-left: 0 !important;
+            }
+        }
+        &.pd-0 {
+            td {
+                padding: 0 !important;
+            }
+        }
+    }
+
+    &.large {
+        tr {
+            td,
+            td {
+                padding: 16px 24px;
+            }
+        }
+    }
+
+    &.middle {
+        font-size: 14px;
+    }
+
+    &.small {
+        font-size: 13px;
+    }
+
+    &.modalTable {
+        min-width: auto;
+    }
+}
+
+.tableEmpty {
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #3c3c3c;
+        font-size: 16px;
+        &:before {
+            content: "";
+            width: 72px;
+            height: 72px;
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.ul {
+    height: 100%;
+    position: relative;
+    overflow-y: auto;
+
+    li {
+        font-size: 16px;
+        font-weight: 500;
+        color: #81838e;
+        position: relative;
+        padding-left: 18px;
+        padding-bottom: 20px;
+
+        &::before {
+            content: "";
+            width: 4px;
+            height: 4px;
+            border: 2px solid #cecfd5;
+            background: #f6f6f9;
+            position: absolute;
+            top: 8px;
+            left: 0;
+        }
+
+        &::after {
+            content: "";
+            width: 2px;
+            height: 100%;
+            background: #cecfd5;
+            position: absolute;
+            top: 16px;
+            left: 3px;
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+
+            &::after {
+                content: none;
+            }
+        }
+    }
+}

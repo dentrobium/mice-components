@@ -1,0 +1,167 @@
+.formsFlexLine {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    > .formline {
+        margin-right: 10px;
+    }
+
+    > * {
+        margin-right: 10px;
+    }
+
+    select {
+        flex-shrink: 0;
+    }
+}
+
+.formline {
+    display: flex;
+    align-items: center;
+    label {
+        font-size: 14px;
+        flex-shrink: 0;
+        margin-right: 10px;
+
+        &.large {
+            font-size: 15px;
+        }
+
+        &.small {
+            font-size: 12px;
+        }
+    }
+
+    input,
+    select {
+        flex-grow: 1;
+    }
+}
+
+.innerLayout {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    &.view {
+        .title {
+            border-right: 1px solid #ddd;
+            margin-right: 20px;
+        }
+    }
+    .title {
+        flex-shrink: 0;
+        min-width: 80px;
+        line-height: 30px;
+    }
+    .cont {
+        flex-grow: 1;
+        margin-left: 10px;
+    }
+
+    + .innerLayout {
+        margin-top: 16px;
+    }
+}
+
+.error {
+    width: 100%;
+    color: red;
+    margin-top: 10px;
+}
+
+.upload {
+    :global .ant-upload-select {
+        margin: 0 !important;
+    }
+}
+
+.box {
+    line-height: 24px;
+    padding: 4px 11px;
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d9d9d9;
+    box-sizing: border-box;
+    word-break: break-all;
+}
+
+.imgBox {
+    width: 430px;
+    height: 220px;
+
+    &.full {
+        width: 100%;
+        height: auto;
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        width: auto;
+    }
+}
+
+.checkbox {
+    :global .ant-checkbox-inner {
+        width: 22px;
+        height: 22px;
+    }
+    :global .ant-checkbox-inner:after {
+        width: 8px;
+        height: 14px;
+        top: 40.5%;
+        inset-inline-start: 21%;
+    }
+
+    &.sm {
+        font-size: 14px;
+        :global .ant-checkbox-inner {
+            width: 18px;
+            height: 18px;
+        }
+        :global .ant-checkbox-inner:after {
+            width: 6px;
+            height: 9px;
+            top: 44.5%;
+            inset-inline-start: 28.5%;
+        }
+    }
+
+    &.md {
+        font-size: 16px;
+    }
+}
+
+.radio {
+    :global .ant-radio-inner {
+        width: 22px;
+        height: 22px;
+    }
+
+    :global .ant-radio-inner:after {
+        width: 20px;
+        height: 20px;
+        margin-block-start: -10px;
+        margin-inline-start: -10px;
+    }
+
+    &.sm {
+        font-size: 14px;
+        :global .ant-radio-inner {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    &.md {
+        font-size: 16px;
+    }
+}

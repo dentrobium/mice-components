@@ -1,0 +1,130 @@
+.verificationCode {
+    position: relative;
+    padding-right: 20px;
+
+    .copy {
+        position: absolute;
+        top: 3px;
+        right: 0;
+        left: auto;
+        width: 18px;
+    }
+}
+.memberTable {
+    table {
+        table-layout: fixed !important;
+
+        th,
+        td {
+            vertical-align: middle;
+            // 순서 제외로 인한 css 수정
+            // &:nth-child(1) {
+            //     // 체크박스
+            //     width: 35px;
+            // }
+            // &:nth-child(2) {
+            //     // 순서
+            //     width: 60px;
+            // }
+            // &:nth-child(3) {
+            //     // 이름
+            //     width: 110px;
+
+            //     img {
+            //         transform: translateY(3px);
+            //     }
+            // }
+            // &:nth-child(4) {
+            //     // 코드
+            //     width: 329px;
+            // }
+            // &:nth-child(5) {
+            //     // 전화
+            //     width: 140px;
+            // }
+            // &:nth-child(6) {
+            //     // 이메일
+            //     width: 180px;
+            // }
+            // &:nth-child(7) {
+            //     // 조직
+            //     width: 130px;
+            // }
+            // &:nth-child(8) {
+            //     // 직책
+            //     width: 100px;
+            // }
+            // &:nth-child(9) {
+            //     // 직급
+            //     width: 80px;
+            // }
+            // &:nth-child(10) {
+            //     // 상태
+            //     width: 100px;
+            // }
+            &:nth-child(1) {
+                // 체크박스
+                width: 35px;
+            }
+            &:nth-child(2) {
+                // 이름
+                width: 110px;
+                img {
+                    transform: translateY(3px);
+                }
+            }
+            &:nth-child(3) {
+                // 코드
+                width: 329px;
+            }
+            &:nth-child(4) {
+                // 전화
+                width: 149px;
+            }
+            &:nth-child(5) {
+                // 이메일
+                width: 180px;
+            }
+            &:nth-child(6) {
+                // 조직
+                width: 130px;
+            }
+            &:nth-child(7) {
+                // 직책
+                width: 100px;
+            }
+            &:nth-child(8) {
+                // 직급
+                width: 80px;
+            }
+            &:nth-child(9) {
+                // 상태
+                width: 100px;
+            }
+        }
+        tbody {
+            tr {
+                cursor: pointer;
+
+                td {
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    word-break: keep-all;
+                    overflow: hidden;
+                    vertical-align: middle;
+
+                    p,
+                    div {
+                        width: 100%;
+                        display: inline-block !important;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        word-break: keep-all;
+                        overflow: hidden;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+}

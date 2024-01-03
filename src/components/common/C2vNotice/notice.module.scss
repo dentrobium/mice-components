@@ -1,0 +1,35 @@
+.noticeList {
+    dt {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+
+    dd {
+        position: relative;
+        font-size: 14px;
+        color: var(--navy-900);
+        padding-left: 20px;
+        white-space: pre-line;
+        word-break: keep-all;
+
+        &:before {
+            content: "*";
+            position: absolute;
+            left: 7px;
+            top: 3px;
+        }
+    }
+
+    &.credit {
+        dt {
+            margin-bottom: 9px;
+        }
+        dd {
+            font-weight: 500;
+            line-height: 20px;
+        }
+        & + .credit {
+        }
+    }
+}

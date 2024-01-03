@@ -1,0 +1,19 @@
+.title {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ceced3;
+
+    &.noBorder {
+        border-bottom: 0;
+    }
+}
+.subTitle {
+    display: block;
+    font-weight: normal;
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9d9da7;
+}

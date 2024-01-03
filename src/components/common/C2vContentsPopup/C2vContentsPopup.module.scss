@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8e9f1;
+    height: 65px;
+    border-radius: 15px 15px 0 0;
+    font-size: 24px;
+    color: #3e4259;
+}
+.contentsPopup :global .ant-modal-content {
+    padding: 0 !important;
+    border-radius: 15px;
+}
+
+.contentsPopup :global .ant-modal-close {
+    top: 23px;
+    inset-inline-end: 20px;
+}

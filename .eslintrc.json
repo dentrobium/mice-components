@@ -1,0 +1,74 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint", "prettier"],
+    "extends": [
+        "airbnb",
+        "airbnb/hooks",
+        "plugin:@typescript-eslint/recommended",
+        "prettier"
+    ],
+    "settings": {
+        "import/resolver": {
+            "typescript": {},
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    },
+    "rules": {
+        "react/jsx-filename-extension": 0,
+        "@typescript-eslint/naming-convention": [
+            "warn",
+            {
+                "selector": "function",
+                "format": ["PascalCase", "camelCase"]
+            }
+        ],
+        "import/extensions": 0,
+        "no-plusplus": 0,
+        "no-shadow": 1,
+        "no-continue": 0,
+        "no-underscore-dangle": 1,
+        "no-nested-ternary": 1,
+        "import/no-cycle": 1,
+        "import/prefer-default-export": 0,
+        "@typescript-eslint/no-unused-vars": "error",
+        "prettier/prettier": 0,
+        "default-param-last": 1,
+        "react/function-component-definition": [
+            2,
+            { "namedComponents": "arrow-function" }
+        ],
+        "class-methods-use-this": 0,
+        "no-param-reassign": 0,
+        "react/prop-types": 1,
+        "react/react-in-jsx-scope": "off",
+        "linebreak-style": 0,
+        "quotes": [
+            2,
+            "double",
+            { "avoidEscape": true, "allowTemplateLiterals": true }
+        ],
+        "import/no-unresolved": 0,
+        "react-hooks/exhaustive-deps": "warn",
+        "react/require-default-props": 0,
+        "@typescript-eslint/ban-ts-comment": 1,
+        "jsx-a11y/label-has-associated-control": [
+            "error",
+            {
+                "required": {
+                    "some": ["nesting", "id"]
+                }
+            }
+        ],
+        "jsx-ally/click-events-have-key-events": 0,
+        "jsx-a11y/no-noninteractive-element-interactions": 0,
+        "react/jsx-props-no-spreading": 0,
+        "react/jsx-no-useless-fragment": "off",
+        "import/no-extraneous-dependencies": "off"
+    }
+}

@@ -1,0 +1,13 @@
+.search {
+    display: flex;
+    align-items: center;
+    .hypen {
+        margin: 0 10px;
+    }
+    .btnWrap {
+        margin-left: 10px;
+        > * {
+            margin: 0 10px;
+        }
+    }
+}

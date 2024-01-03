@@ -1,0 +1,19 @@
+.contentInner {
+    padding: 40px 60px 25px;
+}
+.icon_del {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.emailWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customClose {
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    z-index: 999;
+}

@@ -1,0 +1,86 @@
+.language {
+    position: relative;
+    font-weight: 500;
+    margin: 0 15px 0 0;
+
+    &#darkMode {
+        .trigger {
+            &.active {
+                color: #fff;
+
+                &::after {
+                    background-image: url("../../../../public/assets/images/submission/icon_arrow_wh.png");
+                }
+            }
+        }
+    }
+
+    .trigger {
+        position: relative;
+        color: #9d9da7;
+        cursor: pointer;
+        font-size: 16px;
+        min-width: 73px;
+
+        &::after {
+            content: "";
+            width: 14px;
+            height: 7px;
+            margin-left: 14px;
+            transform: translateY(-2px);
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: left center;
+            background-image: url("../../../../public/assets/images/submission/icon_arrow.png");
+        }
+
+        &.active {
+            color: #19191b;
+
+            &::after {
+                background-image: url("../../../../public/assets/images/submission/icon_arrow_bk.png");
+            }
+        }
+    }
+
+    ul {
+        border-radius: 3px;
+        background: #fff;
+        position: absolute;
+        top: 35px;
+        left: calc(-50% - 23px);
+        width: 165px;
+        height: 90px;
+        border-radius: 9px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+
+        li {
+            width: 100%;
+            user-select: none;
+
+            button {
+                width: 100%;
+                padding: 5px 0;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+                color: #595961;
+                transition: all 0.1s ease-in-out;
+            }
+
+            &.active,
+            &:hover {
+                button {
+                    color: #25afff;
+                }
+            }
+        }
+    }
+}

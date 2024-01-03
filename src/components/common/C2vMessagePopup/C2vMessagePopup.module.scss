@@ -1,0 +1,79 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8e9f1;
+    height: 70px;
+    border-radius: 12px 12px 0 0;
+    font-size: 26px;
+    color: #3e4259;
+    text-align: center;
+    padding: 0 15px;
+    line-height: 1;
+
+    &.danger {
+        color: var(--danger);
+    }
+}
+
+.contentsPopup :global .ant-modal-content {
+    padding: 0 !important;
+    border-radius: 12px;
+}
+
+.contentsPopup :global .ant-modal-close {
+    top: 23px;
+    inset-inline-end: 20px;
+}
+
+.content {
+    padding: 20px 58px;
+    min-height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: #3e4259;
+    text-align: center;
+    flex-direction: column;
+    white-space: pre-line;
+    word-break: keep-all;
+}
+
+.btnGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+
+    button {
+        margin: 0 10px;
+    }
+}
+
+.close {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 18px;
+        height: 2px;
+        background-color: #818a97;
+        transform: translate(-50%, -50%);
+    }
+
+    &:before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &:after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+}
